@@ -146,18 +146,6 @@ def convert_sav_to_json(filename, output_path):
     print(f"Loading GVAS file")
     gvas_file = GvasFile.read(raw_gvas, PALWORLD_TYPE_HINTS, PALWORLD_CUSTOM_PROPERTIES)
     parse_json(gvas_file.dump(), output_path)
-
-# # File paths
-# input_file_path = 'Level.sav.json'
-# output_file_path = 'Level.sav.json.good'
-
-# # Parse and save the JSON data
-# parsed_data = parse_json(input_file_path)
-# print("Finished processing. Writing to file...",end="", flush=True)
-# with open(output_file_path, 'w') as file:
-#     json.dump(parsed_data, file, indent=2)
-# print("done")
-# print(f"Processed JSON saved to {output_file_path}")
-
+    
 if __name__ == "__main__":
     main()
